@@ -1,0 +1,6 @@
+{"schemaVersion": 1,
+ "allowance": {"tier": "Example plan",
+               "window": {"usedPercent": 6, "resetsAtMs": 1793582232000},
+               "weekly": {"usedPercent": 44, "resetsAtMs": 1793577600000},
+               "asOfMs": 1793568529011, "source": "example"},
+ "reason": null, "hint": null}

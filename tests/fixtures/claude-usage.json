@@ -1,0 +1,13 @@
+[
+ {
+  "type": "system",
+  "subtype": "init"
+ },
+ {
+  "type": "result",
+  "subtype": "success",
+  "is_error": false,
+  "num_turns": 0,
+  "result": "You are currently using your subscription to power your Claude Code usage\nCurrent week (all models): 17% used \u00b7 resets Nov 8 at 4am (America/New_York)\nCurrent week (Fable): 0% used \u00b7 resets Nov 8 at 4am (America/New_York)"
+ }
+]

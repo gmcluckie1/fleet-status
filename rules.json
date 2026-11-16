@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "thresholds": {
+    "low_remaining_pct": 10,
+    "watch_remaining_pct": 30,
+    "spend_first_min_remaining_pct": 60,
+    "spend_first_within_hours": 48,
+    "codex_credits_low_below": 1000,
+    "github_actions_watch_remaining_pct": 6,
+    "max_age_seconds": 21600,
+    "freshness_exceptions": []
+  },
+  "advice": {
+    "low": "Nearly exhausted: route work to another provider until the next reset",
+    "watch": "Getting tight: pace work against this pool",
+    "spend_first": "Lots left and resetting soon: spend this pool first",
+    "healthy": null,
+    "unmetered": null,
+    "unknown": null,
+    "stale": "Stale reading (>6h old): treat pool state and figures as unknown until refreshed",
+    "missing_timestamp": "Missing producer timestamp: treat pool state and figures as unknown"
+  },
+  "pools": {
+    "muse": "Muse Code",
+    "codex": "Codex weekly limit",
+    "codex-credits": "Codex credits",
+    "codex-reset-credits": "Codex rate-limit reset credits",
+    "github-actions": "GitHub Actions minutes",
+    "anthropic-api": "Anthropic API spend",
+    "anthropic-api-ledger": "Anthropic API spend (local ledger)",
+    "claude-subscription": "Claude subscription",
+    "claude-cloud": "Claude cloud",
+    "claude-fable": "Claude Fable weekly limit",
+    "grok": "Grok",
+    "openai-api": "OpenAI API spend"
+  }
+}

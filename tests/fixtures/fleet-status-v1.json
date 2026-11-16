@@ -1,0 +1,63 @@
+{
+  "schema": "fleet-status/v1",
+  "generated_at": "2026-11-01T12:00:00Z",
+  "collector_id": "sample-collector",
+  "sources": [
+    {"id": "muse", "ok": true, "observed_at": "2026-11-01T11:59:30Z", "error_code": null},
+    {"id": "codex", "ok": false, "observed_at": null, "error_code": "timeout"}
+  ],
+  "asks": [
+    {
+      "id": "sample-ask-1",
+      "title": "Confirm the sample change window",
+      "detail": "Synthetic ask for fixtures",
+      "kind": "confirm",
+      "since": "2026-11-01T10:00:00Z",
+      "link_ref": "pr:140"
+    }
+  ],
+  "pools": [
+    {
+      "id": "sample-pool",
+      "label": "Sample requests",
+      "kind": "quota",
+      "unit": "requests",
+      "used": 120,
+      "limit": 300,
+      "remaining": 180,
+      "windows": [{"label": "monthly", "used_pct": 40, "resets_at": "2026-12-01T00:00:00Z"}],
+      "state": "healthy",
+      "advice": null,
+      "observed_at": "2026-11-01T11:59:30Z",
+      "source_id": "muse"
+    }
+  ],
+  "resets": [
+    {
+      "at": "2026-12-01T00:00:00Z",
+      "pool_id": "sample-pool",
+      "label": "Sample monthly",
+      "effect": "Requests reset",
+      "kind": "reset"
+    }
+  ],
+  "work": [
+    {
+      "id": "sample-work-1",
+      "repo": "example-repo",
+      "ref": "pr:142",
+      "title": "Synthetic API change",
+      "stage": "review",
+      "reviewer_provider": "codex",
+      "note": null,
+      "updated_at": "2026-11-01T11:58:00Z"
+    }
+  ],
+  "landed": [
+    {"ref": "pr:141", "repo": "example-repo", "title": "Synthetic merged change", "merged_at": "2026-11-01T09:00:00Z"}
+  ],
+  "landed_count_today": 1,
+  "closed_wp_today": 0,
+  "truncated": false,
+  "omitted": 0
+}

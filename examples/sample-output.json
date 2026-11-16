@@ -1,0 +1,619 @@
+{
+  "asks": [],
+  "closed_wp_today": 0,
+  "collector_id": "my-machine",
+  "generated_at": "2026-11-01T21:30:00Z",
+  "landed": [],
+  "landed_count_today": 0,
+  "omitted": 0,
+  "pools": [
+    {
+      "advice": null,
+      "id": "muse",
+      "kind": "subscription",
+      "label": "Muse Code",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:28:49Z",
+      "pace_pct_per_hr": 5,
+      "remaining": 56,
+      "runs_out_at": null,
+      "source_id": "muse",
+      "state": "healthy",
+      "unit": "percent",
+      "used": 44,
+      "windows": [
+        {
+          "label": "5h",
+          "resets_at": "2026-11-02T01:17:12Z",
+          "used_pct": 6
+        },
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-02T00:00:00Z",
+          "used_pct": 44
+        }
+      ]
+    },
+    {
+      "advice": "Nearly exhausted: route work to another provider until the next reset",
+      "id": "codex",
+      "kind": "subscription",
+      "label": "Codex weekly limit",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": 1,
+      "remaining": 0,
+      "runs_out_at": "2026-11-01T21:30:00Z",
+      "source_id": "codex",
+      "state": "low",
+      "unit": "percent",
+      "used": 100,
+      "windows": [
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-04T06:36:54Z",
+          "used_pct": 100
+        }
+      ]
+    },
+    {
+      "advice": null,
+      "id": "codex-credits",
+      "kind": "credit",
+      "label": "Codex credits",
+      "limit": null,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": null,
+      "remaining": 1234,
+      "runs_out_at": null,
+      "source_id": "codex",
+      "state": "healthy",
+      "unit": "credits",
+      "used": null,
+      "windows": []
+    },
+    {
+      "advice": null,
+      "id": "codex-reset-credits",
+      "kind": "credit",
+      "label": "Codex rate-limit reset credits",
+      "limit": null,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": null,
+      "remaining": 2,
+      "runs_out_at": null,
+      "source_id": "codex",
+      "state": "healthy",
+      "unit": "credits",
+      "used": null,
+      "windows": []
+    },
+    {
+      "advice": null,
+      "id": "agy-account-a-gemini-models",
+      "kind": "subscription",
+      "label": "agy-account-a-gemini-models (weekly)",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": null,
+      "remaining": 100,
+      "runs_out_at": null,
+      "source_id": "agy",
+      "state": "healthy",
+      "unit": "percent",
+      "used": 0,
+      "windows": [
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-04T00:01:19Z",
+          "used_pct": 0
+        },
+        {
+          "label": "5h",
+          "resets_at": "2026-11-02T15:19:22Z",
+          "used_pct": 0
+        }
+      ]
+    },
+    {
+      "advice": "Nearly exhausted: route work to another provider until the next reset",
+      "id": "agy-account-a-claude-and-gpt-models",
+      "kind": "subscription",
+      "label": "agy-account-a-claude-and-gpt-models (weekly)",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": 1,
+      "remaining": 0,
+      "runs_out_at": "2026-11-01T21:30:00Z",
+      "source_id": "agy",
+      "state": "low",
+      "unit": "percent",
+      "used": 100,
+      "windows": [
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-04T00:10:49Z",
+          "used_pct": 100
+        }
+      ]
+    },
+    {
+      "advice": "Nearly exhausted: route work to another provider until the next reset",
+      "id": "agy-account-a-gemini-4-argon",
+      "kind": "subscription",
+      "label": "agy-account-a-gemini-4-argon (weekly)",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": null,
+      "remaining": 0,
+      "runs_out_at": null,
+      "source_id": "agy",
+      "state": "low",
+      "unit": "percent",
+      "used": 100,
+      "windows": [
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-09T00:44:56Z",
+          "used_pct": 100
+        }
+      ]
+    },
+    {
+      "advice": null,
+      "id": "agy-account-b-gemini-models",
+      "kind": "subscription",
+      "label": "agy-account-b-gemini-models (weekly)",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": 0,
+      "remaining": 62,
+      "runs_out_at": null,
+      "source_id": "agy",
+      "state": "healthy",
+      "unit": "percent",
+      "used": 38,
+      "windows": [
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-04T00:01:19Z",
+          "used_pct": 38
+        },
+        {
+          "label": "5h",
+          "resets_at": "2026-11-02T15:19:22Z",
+          "used_pct": 0
+        }
+      ]
+    },
+    {
+      "advice": "Nearly exhausted: route work to another provider until the next reset",
+      "id": "agy-account-b-claude-and-gpt-models",
+      "kind": "subscription",
+      "label": "agy-account-b-claude-and-gpt-models (weekly)",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": 1,
+      "remaining": 0,
+      "runs_out_at": "2026-11-01T21:30:00Z",
+      "source_id": "agy",
+      "state": "low",
+      "unit": "percent",
+      "used": 100,
+      "windows": [
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-04T00:10:49Z",
+          "used_pct": 100
+        }
+      ]
+    },
+    {
+      "advice": "Nearly exhausted: route work to another provider until the next reset",
+      "id": "agy-account-b-gemini-4-argon",
+      "kind": "subscription",
+      "label": "agy-account-b-gemini-4-argon (weekly)",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": null,
+      "remaining": 0,
+      "runs_out_at": null,
+      "source_id": "agy",
+      "state": "low",
+      "unit": "percent",
+      "used": 100,
+      "windows": [
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-09T00:44:56Z",
+          "used_pct": 100
+        }
+      ]
+    },
+    {
+      "advice": null,
+      "id": "colab-account-a-units",
+      "kind": "credit",
+      "label": "Colab compute units (account-a)",
+      "limit": null,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": null,
+      "remaining": 594,
+      "runs_out_at": null,
+      "source_id": "colab",
+      "state": "healthy",
+      "unit": "credits",
+      "used": null,
+      "windows": []
+    },
+    {
+      "advice": null,
+      "id": "colab-account-b-units",
+      "kind": "credit",
+      "label": "Colab compute units (account-b)",
+      "limit": null,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": null,
+      "remaining": 594,
+      "runs_out_at": null,
+      "source_id": "colab",
+      "state": "healthy",
+      "unit": "credits",
+      "used": null,
+      "windows": []
+    },
+    {
+      "advice": null,
+      "id": "claude-subscription",
+      "kind": "subscription",
+      "label": "Claude subscription",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": 1,
+      "remaining": 83,
+      "runs_out_at": "2026-11-04T10:31:45Z",
+      "source_id": "claude_sub",
+      "state": "healthy",
+      "unit": "percent",
+      "used": 17,
+      "windows": [
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-08T09:00:00Z",
+          "used_pct": 17
+        }
+      ]
+    },
+    {
+      "advice": null,
+      "id": "claude-fable",
+      "kind": "subscription",
+      "label": "Claude Fable weekly limit",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": null,
+      "remaining": 100,
+      "runs_out_at": null,
+      "source_id": "claude_sub",
+      "state": "healthy",
+      "unit": "percent",
+      "used": 0,
+      "windows": [
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-08T09:00:00Z",
+          "used_pct": 0
+        }
+      ]
+    },
+    {
+      "advice": null,
+      "id": "grok",
+      "kind": "subscription",
+      "label": "Grok",
+      "limit": 100,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": 6,
+      "remaining": 36,
+      "runs_out_at": "2026-11-02T03:21:27Z",
+      "source_id": "grok",
+      "state": "healthy",
+      "unit": "percent",
+      "used": 64,
+      "windows": [
+        {
+          "label": "weekly",
+          "resets_at": "2026-11-08T11:05:11Z",
+          "used_pct": 64
+        }
+      ]
+    },
+    {
+      "advice": "Getting tight: pace work against this pool",
+      "id": "claude-cloud",
+      "kind": "credit",
+      "label": "Claude cloud",
+      "limit": 25000,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": 0,
+      "remaining": 4520,
+      "runs_out_at": null,
+      "source_id": "claude_cloud",
+      "state": "watch",
+      "unit": "usd_cents",
+      "used": 20480,
+      "windows": [
+        {
+          "label": "monthly",
+          "resets_at": "2026-11-05T07:59:00Z",
+          "used_pct": 82
+        }
+      ]
+    },
+    {
+      "advice": null,
+      "id": "github-actions",
+      "kind": "minutes",
+      "label": "GitHub Actions minutes",
+      "limit": 2000,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": null,
+      "remaining": 1997,
+      "runs_out_at": null,
+      "source_id": "github_billing",
+      "state": "healthy",
+      "unit": "minutes",
+      "used": 3,
+      "windows": [
+        {
+          "label": "monthly",
+          "resets_at": "2026-12-01T00:00:00Z",
+          "used_pct": 0
+        }
+      ]
+    },
+    {
+      "advice": "Monthly credit is a budget I chose, not a vendor limit",
+      "id": "anthropic-api",
+      "kind": "credit",
+      "label": "Anthropic API spend",
+      "limit": 20000,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": null,
+      "remaining": 18800,
+      "runs_out_at": null,
+      "source_id": "anthropic_costs",
+      "state": "healthy",
+      "unit": "usd_cents",
+      "used": 1200,
+      "windows": [
+        {
+          "label": "monthly",
+          "resets_at": "2026-12-01T00:00:00Z",
+          "used_pct": 6
+        }
+      ]
+    },
+    {
+      "advice": null,
+      "id": "openai-api",
+      "kind": "credit",
+      "label": "OpenAI API spend",
+      "limit": 12800,
+      "observed_at": "2026-11-01T21:30:00Z",
+      "pace_pct_per_hr": 0,
+      "remaining": 8550,
+      "runs_out_at": "2026-11-09T09:12:56Z",
+      "source_id": "openai_costs",
+      "state": "healthy",
+      "unit": "usd_cents",
+      "used": 4250,
+      "windows": [
+        {
+          "label": "monthly",
+          "resets_at": "2026-11-28T04:59:00Z",
+          "used_pct": 33
+        }
+      ]
+    }
+  ],
+  "resets": [
+    {
+      "at": "2026-11-02T00:00:00Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "Muse Code weekly",
+      "pool_id": "muse"
+    },
+    {
+      "at": "2026-11-02T01:17:12Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "Muse Code 5h",
+      "pool_id": "muse"
+    },
+    {
+      "at": "2026-11-02T15:19:22Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "agy-account-a-gemini-models 5h",
+      "pool_id": "agy-account-a-gemini-models"
+    },
+    {
+      "at": "2026-11-02T15:19:22Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "agy-account-b-gemini-models 5h",
+      "pool_id": "agy-account-b-gemini-models"
+    },
+    {
+      "at": "2026-11-04T00:01:19Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "agy-account-a-gemini-models weekly",
+      "pool_id": "agy-account-a-gemini-models"
+    },
+    {
+      "at": "2026-11-04T00:01:19Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "agy-account-b-gemini-models weekly",
+      "pool_id": "agy-account-b-gemini-models"
+    },
+    {
+      "at": "2026-11-04T00:10:49Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "agy-account-a-claude-and-gpt-models weekly",
+      "pool_id": "agy-account-a-claude-and-gpt-models"
+    },
+    {
+      "at": "2026-11-04T00:10:49Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "agy-account-b-claude-and-gpt-models weekly",
+      "pool_id": "agy-account-b-claude-and-gpt-models"
+    },
+    {
+      "at": "2026-11-04T06:36:54Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "Codex weekly limit weekly",
+      "pool_id": "codex"
+    },
+    {
+      "at": "2026-11-05T07:59:00Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "Claude cloud monthly",
+      "pool_id": "claude-cloud"
+    },
+    {
+      "at": "2026-11-08T09:00:00Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "Claude subscription weekly",
+      "pool_id": "claude-subscription"
+    },
+    {
+      "at": "2026-11-08T09:00:00Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "Claude Fable weekly limit weekly",
+      "pool_id": "claude-fable"
+    },
+    {
+      "at": "2026-11-08T11:05:11Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "Grok weekly",
+      "pool_id": "grok"
+    },
+    {
+      "at": "2026-11-09T00:44:56Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "agy-account-a-gemini-4-argon weekly",
+      "pool_id": "agy-account-a-gemini-4-argon"
+    },
+    {
+      "at": "2026-11-09T00:44:56Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "agy-account-b-gemini-4-argon weekly",
+      "pool_id": "agy-account-b-gemini-4-argon"
+    },
+    {
+      "at": "2026-11-28T04:59:00Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "OpenAI API spend monthly",
+      "pool_id": "openai-api"
+    },
+    {
+      "at": "2026-12-01T00:00:00Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "GitHub Actions minutes monthly",
+      "pool_id": "github-actions"
+    },
+    {
+      "at": "2026-12-01T00:00:00Z",
+      "effect": "reset",
+      "kind": "reset",
+      "label": "Anthropic API spend monthly",
+      "pool_id": "anthropic-api"
+    }
+  ],
+  "schema": "fleet-status/v1",
+  "sources": [
+    {
+      "error_code": null,
+      "id": "muse",
+      "observed_at": "2026-11-01T21:28:49Z",
+      "ok": true
+    },
+    {
+      "error_code": null,
+      "id": "codex",
+      "observed_at": "2026-11-01T21:30:00Z",
+      "ok": true
+    },
+    {
+      "error_code": null,
+      "id": "agy",
+      "observed_at": "2026-11-01T21:30:00Z",
+      "ok": true
+    },
+    {
+      "error_code": null,
+      "id": "colab",
+      "observed_at": "2026-11-01T21:30:00Z",
+      "ok": true
+    },
+    {
+      "error_code": null,
+      "id": "claude_sub",
+      "observed_at": "2026-11-01T21:30:00Z",
+      "ok": true
+    },
+    {
+      "error_code": null,
+      "id": "grok",
+      "observed_at": "2026-11-01T21:30:00Z",
+      "ok": true
+    },
+    {
+      "error_code": null,
+      "id": "claude_cloud",
+      "observed_at": "2026-11-01T21:30:00Z",
+      "ok": true
+    },
+    {
+      "error_code": null,
+      "id": "github_billing",
+      "observed_at": "2026-11-01T21:30:00Z",
+      "ok": true
+    },
+    {
+      "error_code": null,
+      "id": "anthropic_costs",
+      "observed_at": "2026-11-01T21:30:00Z",
+      "ok": true
+    },
+    {
+      "error_code": null,
+      "id": "openai_costs",
+      "observed_at": "2026-11-01T21:30:00Z",
+      "ok": true
+    },
+    {
+      "error_code": null,
+      "id": "api_probe",
+      "observed_at": "2026-11-01T21:30:00Z",
+      "ok": true
+    }
+  ],
+  "truncated": false,
+  "work": []
+}

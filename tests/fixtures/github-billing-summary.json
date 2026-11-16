@@ -1,0 +1,5 @@
+{"timePeriod": {"year": 2026, "month": 11},
+ "usageItems": [
+  {"product": "Actions", "sku": "actions_linux", "unitType": "minutes", "grossQuantity": 3.0, "netAmount": 0.0},
+  {"product": "Actions", "sku": "actions_storage", "unitType": "gigabyte-hours", "grossQuantity": 134.4, "netAmount": 0.0},
+  {"product": "Advanced Security", "sku": "example", "unitType": "example", "grossQuantity": 1, "netAmount": 5.0}]}

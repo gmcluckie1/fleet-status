@@ -1,0 +1,77 @@
+{
+  "_comment": "Copy this file, delete the sources you do not use and fill in your own values. Keys that start with an underscore are comments. A source that is listed here runs; set \"enabled\": false to skip it without deleting it.",
+  "collector_id": "my-machine",
+  "state_dir": "~/.local/state/fleet-status",
+  "pool_notes": {
+    "anthropic-api": "Monthly credit is a budget I chose, not a vendor limit"
+  },
+  "sources": {
+    "muse": {
+      "enabled": true,
+      "command": ["muse", "usage", "--json"]
+    },
+    "codex": {
+      "enabled": true,
+      "command": ["codex", "app-server"],
+      "sessions_dir": "~/.codex/sessions"
+    },
+    "agy": {
+      "enabled": true,
+      "_comment": "One entry per account. home gives that account its own HOME so several logins can coexist.",
+      "accounts": [
+        {"label": "account-a", "home": "~/agy-profiles/account-a"},
+        {"label": "account-b", "home": "~/agy-profiles/account-b"}
+      ]
+    },
+    "colab": {
+      "enabled": true,
+      "_comment": "expect_email is optional: when set, 'whoami' must report it or the pool is unknown.",
+      "accounts": [
+        {"label": "account-a", "command": ["colab"], "expect_email": "account-a@example.com"},
+        {"label": "account-b", "command": ["colab-account-b"]}
+      ]
+    },
+    "claude_sub": {
+      "enabled": true,
+      "command": ["claude"],
+      "fable": true
+    },
+    "grok": {
+      "enabled": true,
+      "command": ["grok", "agent", "--no-leader", "stdio"]
+    },
+    "claude_cloud": {
+      "enabled": false,
+      "_comment": "Unofficial endpoint. The credential is your Claude OAuth token (or the JSON the Claude CLI stores): FLEET_STATUS_CLAUDE_OAUTH_TOKEN, or a command that prints it.",
+      "credential": {"env": "FLEET_STATUS_CLAUDE_OAUTH_TOKEN"}
+    },
+    "github_billing": {
+      "enabled": true,
+      "owner": "your-github-user-or-org",
+      "owner_type": "user",
+      "included_minutes": 2000
+    },
+    "anthropic_costs": {
+      "enabled": true,
+      "monthly_credit_usd": 200,
+      "credential": {"command": ["pass", "show", "anthropic/admin-key"]}
+    },
+    "openai_costs": {
+      "enabled": true,
+      "grant_usd": 100,
+      "grant_start": "2026-11-01",
+      "expires": "2026-12-31T23:59",
+      "timezone": "UTC",
+      "credential": {"env": "FLEET_STATUS_OPENAI_ADMIN_KEY"}
+    },
+    "anthropic_ledger": {
+      "enabled": false,
+      "_comment": "For API users with no Admin key: api_ledger.py record keeps the ledger this reads.",
+      "monthly_credit_usd": 200
+    },
+    "api_probe": {
+      "enabled": true,
+      "credential": {"env": "FLEET_STATUS_ANTHROPIC_API_KEY"}
+    }
+  }
+}

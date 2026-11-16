@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+# Your own config and the files the collector writes at run time
+/fleet-status.json
+usage-state.json
+collector.log
+api-ledger.json
+api-ledger-events.jsonl*
